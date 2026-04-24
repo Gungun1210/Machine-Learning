@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────────
+# AutoStream AI Agent — Requirements
+# Python 3.9+  |  Install: pip install -r requirements.txt
+# ─────────────────────────────────────────────────
+
+# ── Web framework ──────────────────────────────────
+flask==3.0.3
+flask-cors==4.0.1           # Resolves yellow-line import; CORS for /api/* routes
+
+# ── LangGraph + LangChain ──────────────────────────
+langgraph==0.2.28
+langchain==0.3.7
+langchain-core==0.3.17
+langchain-community==0.3.7   # keep if you use other community tools
+langchain-groq==0.1.0        # Groq integration package
+
+# ── HTTP (used in app.py health check) ────────────
+requests==2.32.3
+
+# ── Utilities ─────────────────────────────────────
+python-dotenv==1.0.1        # Load .env variables
